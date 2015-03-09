@@ -15498,7 +15498,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1808551205}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f35681dad9dd4014a755e8fdd0843e6, type: 3}
+  m_Script: {fileID: 11500000, guid: bd813628557774439acf1c21a1b257a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &1808551207
@@ -16802,6 +16802,7 @@ GameObject:
   - 33: {fileID: 2019817603}
   - 65: {fileID: 2019817602}
   - 23: {fileID: 2019817601}
+  - 54: {fileID: 2019817606}
   - 114: {fileID: 2019817605}
   m_Layer: 0
   m_Name: Drone
@@ -16856,7 +16857,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2019817600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.5, y: 5.55000019, z: 16.8400002}
+  m_LocalPosition: {x: -.5, y: 6, z: 17.1599998}
   m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16872,6 +16873,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af6350edd66f4ea297704c1897f7dc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &2019817606
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2019817600}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 118
+  m_CollisionDetection: 0
 --- !u!1 &2021463419
 GameObject:
   m_ObjectHideFlags: 0
