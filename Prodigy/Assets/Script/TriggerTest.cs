@@ -5,14 +5,13 @@ using System.Collections;
  * 	Testing event triggers.
  * 
  */
-public class TriggerTest : MonoBehaviour {
+public class triggerTest : MonoBehaviour {
 
 	/*
 		obj = object being entering the trigger zone. (ie. the camera in our case)
 	 */
 	void OnTriggerEnter(Collider obj) {
 		Debug.Log ("Entering THE DANGER ZONE!!!");
-		DroneEvent.triggerDrone();
 	}
 
 	void OnTriggerStay (Collider obj){
