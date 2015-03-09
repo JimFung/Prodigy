@@ -61,7 +61,10 @@
      <Compile Include="Assets\Script\Autowalk.cs" />
      <Compile Include="Assets\Script\CharacterMotor.cs" />
      <Compile Include="Assets\Script\FPSInputController.cs" />
+     <Compile Include="Assets\Script\Rocket.cs" />
+     <Compile Include="Assets\Script\Shoot.cs" />
      <None Include="Assets\Cardboard\Resources\SkyboxMesh.shader" />
+     <None Include="Assets\StandardAssets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\StandardAssets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Cardboard\Resources\GUIScreen.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
