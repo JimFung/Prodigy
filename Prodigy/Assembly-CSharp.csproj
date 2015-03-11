@@ -60,6 +60,7 @@
      <Compile Include="Assets\Cardboard\Scripts\StereoLensFlare.cs" />
      <Compile Include="Assets\Script\Autowalk.cs" />
      <Compile Include="Assets\Script\CharacterMotor.cs" />
+     <Compile Include="Assets\Script\Door.cs" />
      <Compile Include="Assets\Script\DroneEvent.cs" />
      <Compile Include="Assets\Script\DroneEventTrigger.cs" />
      <Compile Include="Assets\Script\FPSInputController.cs" />

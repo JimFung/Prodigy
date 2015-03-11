@@ -14,6 +14,7 @@ public class DroneEventTrigger : MonoBehaviour {
 
 	void OnTriggerStay (Collider obj){
 		Debug.Log ("IT'S DANGEROUS!!!!");
+		Debug.Log (obj.gameObject.name);
 	}
 
 	void OnTriggerExit (Collider obj){
