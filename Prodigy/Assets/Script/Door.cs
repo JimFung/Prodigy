@@ -16,16 +16,18 @@ public class Door : MonoBehaviour {
 	void OnTriggerEnter(Collider obj){
 
 		if (obj.gameObject.name == "Head") {
-			Debug.Log("Enter");
 			doorOpen = true;
 			DoorController("Open");
 		}
 	}
 
 	//close door
+	//OnTriggerExit gets called multiple times becuase there are multiple 
+	//components attached to the camera that would trigger this method call.
 	void OnTriggerExit(Collider obj){
+
+		//this check makes sure that we only send the Close trigger once per open.
 		if (doorOpen) {
-			Debug.Log("Exit");
 			doorOpen = false;
 			DoorController("Close");
 		}
