@@ -19,7 +19,7 @@ public class Autowalk : MonoBehaviour {
 		FPSInputController autowalk = FPSController.GetComponent<FPSInputController> ();
 		
 		// if looking at object for 2 seconds, enable/disable autowalk
-		if (gazeYPosition < -.3) { 
+		if (gazeYPosition < -.3 && !Interactable.interacting) { 
 			autowalk.checkAutoWalk = true;
 		} else {
 			autowalk.checkAutoWalk = false;
