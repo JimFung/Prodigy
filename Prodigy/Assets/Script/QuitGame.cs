@@ -4,7 +4,6 @@ using System.Collections;
 public class QuitGame : MonoBehaviour {
 	
 	private CardboardHead head;
-	private Vector3 startingPosition;
 	private float delay = 0.0f; 
 	public Color greyBlue = new Color(0.2F, 0.3F, 0.4F, 0.5F);
 	

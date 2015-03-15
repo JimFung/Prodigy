@@ -5,7 +5,6 @@ public class Autowalk : MonoBehaviour {
 	
 	private CardboardHead head;
 	private float gazeYPosition;
-	private float delay = 0.0f; 
 	
 	void Start() {
 		head = Camera.main.GetComponent<StereoController>().Head;

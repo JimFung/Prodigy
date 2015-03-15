@@ -7,7 +7,6 @@ public class WieldWeapon : Interactable {
 	public GameObject player;
 	float distance = 10.0f;
 	GameObject hand;
-	private float delay = 0.0f;
 	public static bool weaponWielded = false;
 	
 	void Start(){
