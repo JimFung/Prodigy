@@ -8033,6 +8033,8 @@ GameObject:
   - 95: {fileID: 344815591}
   - 54: {fileID: 344815590}
   - 114: {fileID: 344815589}
+  - 65: {fileID: 344815592}
+  - 135: {fileID: 344815593}
   m_Layer: 0
   m_Name: Drone1
   m_TagString: Untagged
@@ -8047,7 +8049,7 @@ Transform:
   m_PrefabInternal: {fileID: 1190932843}
   m_GameObject: {fileID: 344815587}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -.5, y: 5.5, z: 15}
+  m_LocalPosition: {x: -.5, y: 5.5, z: 10}
   m_LocalScale: {x: 25, y: 25, z: 25}
   m_Children:
   - {fileID: 48886604}
@@ -8077,7 +8079,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 2
 --- !u!95 &344815591
 Animator:
@@ -8095,6 +8097,30 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &344815592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 344815587}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: .0350000001, y: .0270000007, z: .0350000001}
+  m_Center: {x: 0, y: .00100000005, z: 0}
+--- !u!135 &344815593
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 344815587}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .0147000002
+  m_Center: {x: 0, y: .00449999981, z: 0}
 --- !u!1 &346002848
 GameObject:
   m_ObjectHideFlags: 0
@@ -25935,7 +25961,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: be2afc2d466e83945bd7f7ec6bdfb386, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: be2afc2d466e83945bd7f7ec6bdfb386, type: 3}
       propertyPath: m_LocalRotation.x
