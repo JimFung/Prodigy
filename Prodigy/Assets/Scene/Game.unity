@@ -8794,6 +8794,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 393439963}
   - 95: {fileID: 393439964}
+  - 114: {fileID: 393439966}
+  - 54: {fileID: 393439965}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Untagged
@@ -8808,7 +8810,7 @@ Transform:
   m_PrefabInternal: {fileID: 1668376026}
   m_GameObject: {fileID: 393439962}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
-  m_LocalPosition: {x: -0, y: 6.82000017, z: 0}
+  m_LocalPosition: {x: -.5, y: 5.44000006, z: 15}
   m_LocalScale: {x: 25, y: 25, z: 25}
   m_Children:
   - {fileID: 1677933147}
@@ -8830,6 +8832,32 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!54 &393439965
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 393439962}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &393439966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 393439962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af6350edd66f4ea297704c1897f7dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &400438235
 GameObject:
   m_ObjectHideFlags: 0
@@ -35649,15 +35677,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400006, guid: be2afc2d466e83945bd7f7ec6bdfb386, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -.5
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: be2afc2d466e83945bd7f7ec6bdfb386, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.82000017
+      value: 5.44000006
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: be2afc2d466e83945bd7f7ec6bdfb386, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: be2afc2d466e83945bd7f7ec6bdfb386, type: 3}
       propertyPath: m_LocalRotation.x
@@ -35677,7 +35705,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: be2afc2d466e83945bd7f7ec6bdfb386, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: be2afc2d466e83945bd7f7ec6bdfb386, type: 3}
       propertyPath: m_Name
