@@ -8,7 +8,9 @@ public class DroneEventTrigger : MonoBehaviour {
 	 */
 
 	void OnTriggerEnter(Collider obj){
-		DroneEvent.triggerDrone();
+		if (!(obj.gameObject.name == "rocket")) {
+			DroneEvent.triggerDrone ();
+		}
 	}
 
 //	commented for reference sake
