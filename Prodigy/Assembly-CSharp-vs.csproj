@@ -64,8 +64,12 @@
      <Compile Include="Assets\Script\DroneEvent.cs" />
      <Compile Include="Assets\Script\DroneEventTrigger.cs" />
      <Compile Include="Assets\Script\FPSInputController.cs" />
+     <Compile Include="Assets\Script\Interactable.cs" />
+     <Compile Include="Assets\Script\QuitGame.cs" />
      <Compile Include="Assets\Script\Rocket.cs" />
      <Compile Include="Assets\Script\Shoot.cs" />
+     <Compile Include="Assets\Script\StartGame.cs" />
+     <Compile Include="Assets\Script\WieldWeapon.cs" />
      <None Include="Assets\Cardboard\Resources\SkyboxMesh.shader" />
      <None Include="Assets\StandardAssets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\StandardAssets\Skyboxes\_skybox info.txt" />
