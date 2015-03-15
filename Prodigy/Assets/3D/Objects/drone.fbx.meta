@@ -140,6 +140,33 @@ ModelImporter:
     4300048: Bottom
     4300050: Cap
     4300052: Camera
+    6400000: Bottom
+    6400002: Camera
+    6400004: Cap
+    6400006: FanCap
+    6400008: Middle
+    6400010: pCube1
+    6400012: pCube2
+    6400014: pCube3
+    6400016: pCube4
+    6400018: pCube5
+    6400020: pCube6
+    6400022: pCube7
+    6400024: pCube8
+    6400026: pCylinder10
+    6400028: pCylinder11
+    6400030: pCylinder12
+    6400032: pCylinder13
+    6400034: pCylinder14
+    6400036: pCylinder3
+    6400038: pCylinder4
+    6400040: pCylinder5
+    6400042: pCylinder6
+    6400044: pCylinder7
+    6400046: pCylinder8
+    6400048: pCylinder9
+    6400050: pTorus1
+    6400052: Top
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -162,7 +189,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .00999999978
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

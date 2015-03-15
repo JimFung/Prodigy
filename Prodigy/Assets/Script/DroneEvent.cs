@@ -16,6 +16,7 @@ public class DroneEvent : MonoBehaviour {
 		if (trigger) {
 			//change z vector for droneRB;
 			droneRB.AddForce(Vector3.back * accel, ForceMode.Acceleration);
+//			droneRB.useGravity = true;
 		}
 	}
 
