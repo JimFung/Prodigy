@@ -4,11 +4,10 @@ using System.Collections;
 public class DroneEvent : MonoBehaviour {
 
 	private static bool trigger;
-	private static Rigidbody droneRB;
 	private static bool decelerate;
+	private static Rigidbody droneRB;
 	private float accel = 10f;
-	private float decel = -10f;
-	private float stop = 0f;
+	private float decel = -2f;
 
 	void Start(){
 		trigger = false;
@@ -16,26 +15,26 @@ public class DroneEvent : MonoBehaviour {
 		droneRB = GetComponent<Rigidbody>();
 	}
 
+	/*
+	ALL NUMBERS IN THIS FUNCTION ARE MAGIC NUMBERS CREATED AFTER YEARS OF 
+	STUDY AND TRAINING. ONLY EDIT IF YOU'RE AT LEAST A LEVEL 9001 ARCHMAGE!
+	 */
 	void FixedUpdate () {
 		if (trigger) {
 			//change z vector for droneRB;
 			droneRB.AddForce(Vector3.back * accel, ForceMode.Acceleration);
-			Debug.Log(droneRB.velocity.magnitude);
-			if(droneRB.velocity.magnitude >= 8.0f){
+			if(droneRB.velocity.magnitude >= 8.9f){
 				trigger = false;
 				decelerate = true;
-				accel *= -1;
 			}
 		}
 		if (decelerate) {
 			//code to decelerate
-			Debug.Log("Hi!");
 			droneRB.useGravity = true;
-			droneRB.AddForce(Vector3.back * decel, ForceMode.Impulse);
-			Debug.Log(droneRB.velocity.magnitude);
-			if(droneRB.velocity.magnitude <= 0.0f){
-
+			droneRB.AddForce(Vector3.back * decel, ForceMode.Acceleration);
+			if(droneRB.velocity.z >= 0.0f){
 				decelerate = false;
+				droneRB.velocity= Vector3.zero;
 			}
 		}
 	}

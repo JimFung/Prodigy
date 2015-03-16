@@ -16,7 +16,6 @@ public class Door : MonoBehaviour {
 	void OnTriggerEnter(Collider obj){
 
 		if (obj.gameObject.name == "Drone1" || obj.gameObject.name == "Head") {
-			Debug.Log("triggered");
 			doorOpen = true;
 			DoorController("Open");
 		}
