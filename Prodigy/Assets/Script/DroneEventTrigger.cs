@@ -6,10 +6,16 @@ public class DroneEventTrigger : MonoBehaviour {
 	/*
 	obj = object entering the trigger zone. (ie. the camera in our case)
 	 */
+	private static int status;
+
+	void Start(){
+		status = 0;
+	}
 
 	void OnTriggerEnter(Collider obj){
-		if (!(obj.gameObject.name == "rocket")) {
+		if (!(obj.gameObject.name == "rocket") && status == 0) {
 			DroneEvent.triggerDrone ();
+			status = 1;
 		}
 	}
 
