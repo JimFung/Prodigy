@@ -2525,6 +2525,14 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 6.62962532
       objectReference: {fileID: 0}
+    - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
+      propertyPath: m_Size.x
+      value: 2.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
+      propertyPath: m_Size.z
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
   m_RootGameObject: {fileID: 1688173273}
@@ -3180,7 +3188,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.89999998, y: 3.1500001, z: 2.79999995}
+  m_Size: {x: 2.5999999, y: 3.1500001, z: 6}
   m_Center: {x: 0, y: .0599999987, z: 0}
 --- !u!95 &138775512
 Animator:
@@ -5372,7 +5380,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
       propertyPath: m_Size.x
-      value: 1.89999998
+      value: 2.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
+      propertyPath: m_Size.z
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
@@ -5789,7 +5801,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
       propertyPath: m_Size.x
-      value: 1.89999998
+      value: 2.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
+      propertyPath: m_Size.z
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
@@ -10891,7 +10907,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.89999998, y: 3.1500001, z: 2.79999995}
+  m_Size: {x: 2.5999999, y: 3.1500001, z: 6}
   m_Center: {x: 0, y: .0599999987, z: 0}
 --- !u!95 &531366892
 Animator:
@@ -11358,7 +11374,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
       propertyPath: m_Size.x
-      value: 1.89999998
+      value: 2.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
+      propertyPath: m_Size.z
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
@@ -13342,7 +13362,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.89999998, y: 3.1500001, z: 2.79999995}
+  m_Size: {x: 2.5999999, y: 3.1500001, z: 6}
   m_Center: {x: 0, y: .0599999987, z: 0}
 --- !u!95 &675219396
 Animator:
@@ -14293,7 +14313,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
       propertyPath: m_Size.x
-      value: 1.89999998
+      value: 2.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
+      propertyPath: m_Size.z
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
@@ -16507,7 +16531,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.89999998, y: 3.1500001, z: 2.79999995}
+  m_Size: {x: 2.5999999, y: 3.1500001, z: 6}
   m_Center: {x: 0, y: .0599999987, z: 0}
 --- !u!95 &807487741
 Animator:
@@ -18712,7 +18736,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
       propertyPath: m_Size.x
-      value: 1.89999998
+      value: 2.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
+      propertyPath: m_Size.z
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
@@ -19129,7 +19157,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.89999998, y: 3.1500001, z: 2.79999995}
+  m_Size: {x: 2.5999999, y: 3.1500001, z: 6}
   m_Center: {x: 0, y: .0599999987, z: 0}
 --- !u!95 &927756213
 Animator:
@@ -22847,7 +22875,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
       propertyPath: m_Size.x
-      value: 1.89999998
+      value: 2.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
+      propertyPath: m_Size.z
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
@@ -29677,7 +29709,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.89999998, y: 3.1500001, z: 2.79999995}
+  m_Size: {x: 2.5999999, y: 3.1500001, z: 6}
   m_Center: {x: 0, y: .0599999987, z: 0}
 --- !u!95 &1447136723
 Animator:
@@ -30772,7 +30804,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
       propertyPath: m_Size.x
-      value: 1.89999998
+      value: 2.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
+      propertyPath: m_Size.z
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
@@ -31279,7 +31315,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
       propertyPath: m_Size.x
-      value: 1.89999998
+      value: 2.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
+      propertyPath: m_Size.z
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
@@ -34832,7 +34872,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.64999998, y: 3.1500001, z: 2.79999995}
+  m_Size: {x: 2.5999999, y: 3.1500001, z: 6}
   m_Center: {x: 0, y: .0599999987, z: 0}
 --- !u!95 &1688173276
 Animator:
@@ -41144,7 +41184,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
       propertyPath: m_Size.x
-      value: 1.89999998
+      value: 2.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556424, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
+      propertyPath: m_Size.z
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a0a4a2df575241feaa875e73995cc51, type: 2}
@@ -41268,7 +41312,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.89999998, y: 3.1500001, z: 2.79999995}
+  m_Size: {x: 2.5999999, y: 3.1500001, z: 6}
   m_Center: {x: 0, y: .0599999987, z: 0}
 --- !u!95 &2000884690
 Animator:
@@ -41431,7 +41475,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.89999998, y: 3.1500001, z: 2.79999995}
+  m_Size: {x: 2.5999999, y: 3.1500001, z: 6}
   m_Center: {x: 0, y: .0599999987, z: 0}
 --- !u!95 &2010198369
 Animator:
@@ -43205,7 +43249,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.89999998, y: 3.1500001, z: 2.79999995}
+  m_Size: {x: 2.5999999, y: 3.1500001, z: 6}
   m_Center: {x: 0, y: .0599999987, z: 0}
 --- !u!95 &2086940143
 Animator:
