@@ -14,8 +14,8 @@ public class Door : MonoBehaviour {
 
 	//open door
 	void OnTriggerEnter(Collider obj){
-
 		if (obj.gameObject.name == "Drone1" || obj.gameObject.name == "Head") {
+			Debug.Log ("enter");
 			doorOpen = true;
 			DoorController("Open");
 		}
@@ -27,7 +27,8 @@ public class Door : MonoBehaviour {
 	void OnTriggerExit(Collider obj){
 
 		//this check makes sure that we only send the Close trigger once per open.
-		if (doorOpen) {
+		if (doorOpen && (obj.gameObject.name == "Drone1" || obj.gameObject.name == "Head")) {
+			Debug.Log ("exit");
 			doorOpen = false;
 			DoorController("Close");
 		}
