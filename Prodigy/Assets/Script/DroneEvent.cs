@@ -4,6 +4,7 @@ using System.Collections;
 public class DroneEvent : MonoBehaviour {
 
 	private static bool trigger;
+	private Animator animator;
 	private static bool decelerate;
 	private static Rigidbody droneRB;
 	private float accel = 10f;
@@ -15,6 +16,8 @@ public class DroneEvent : MonoBehaviour {
 		droneRB = GetComponent<Rigidbody>();
 		//So that the drone ignores the camera
 		Physics.IgnoreLayerCollision (9, 8,true);
+		animator = GetComponent<Animator> ();
+		Debug.Log(animator.name);
 	}
 
 	/*
@@ -22,6 +25,7 @@ public class DroneEvent : MonoBehaviour {
 	STUDY AND TRAINING. ONLY EDIT IF YOU'RE AT LEAST A LEVEL 9001 ARCHMAGE!
 	 */
 	void FixedUpdate () {
+
 		if (trigger) {
 			//change z vector for droneRB;
 			droneRB.AddForce(Vector3.back * accel, ForceMode.Acceleration);
@@ -34,6 +38,10 @@ public class DroneEvent : MonoBehaviour {
 			//code to decelerate
 			droneRB.useGravity = true;
 			droneRB.AddForce(Vector3.back * decel, ForceMode.Acceleration);
+			if(droneRB.velocity.z >= -4.0f){
+				Destroy(animator);
+//				Debug.Log(animator.name);
+			}
 			if(droneRB.velocity.z >= 0.0f){
 				decelerate = false;
 				droneRB.velocity= Vector3.zero;
