@@ -15,7 +15,7 @@ public class Door : MonoBehaviour {
 	//open door
 	void OnTriggerEnter(Collider obj){
 
-		if (obj.gameObject.name == "Head") {
+		if (obj.gameObject.name == "Drone1" || obj.gameObject.name == "Head") {
 			doorOpen = true;
 			DoorController("Open");
 		}
