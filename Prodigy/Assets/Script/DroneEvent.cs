@@ -17,7 +17,6 @@ public class DroneEvent : MonoBehaviour {
 		//So that the drone ignores the camera
 		Physics.IgnoreLayerCollision (9, 8,true);
 		animator = GetComponent<Animator> ();
-		Debug.Log(animator.name);
 	}
 
 	/*
@@ -40,7 +39,6 @@ public class DroneEvent : MonoBehaviour {
 			droneRB.AddForce(Vector3.back * decel, ForceMode.Acceleration);
 			if(droneRB.velocity.z >= -4.0f){
 				Destroy(animator);
-//				Debug.Log(animator.name);
 			}
 			if(droneRB.velocity.z >= 0.0f){
 				decelerate = false;
@@ -48,14 +46,6 @@ public class DroneEvent : MonoBehaviour {
 				Physics.IgnoreLayerCollision (9, 8,false);
 			}
 		}
-	}
-
-	void OnCollisionEnter(Collision collision){
-//		Debug.Log (collision.gameObject.name);
-//		if (collision.gameObject.name == "Head" || collision.gameObject.name == "MainCamera") {
-//			Debug.Log("Hi");
-//			Physics.IgnoreCollision (this.collider, collision.collider);
-//		}
 	}
 
 	public static void triggerDrone(){
