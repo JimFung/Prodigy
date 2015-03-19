@@ -7,6 +7,7 @@ public class WieldWeapon : Interactable {
 	public GameObject player;
 	float distance = 10.0f;
 	GameObject hand;
+	private float delay = 0.0f;
 	public static bool weaponWielded = false;
 	
 	void Start(){
@@ -19,25 +20,26 @@ public class WieldWeapon : Interactable {
 	void Update () {
 		
 		distance = Vector3.Distance (this.transform.position, player.transform.position);
-		GetComponent<Renderer> ().material.color = Color.red;
+		GetComponent<Renderer> ().material.color = Color.white;
 		
 		if(!weaponWielded){
 			
 			RaycastHit hit;
 			bool isLookedAt = GetComponent<Collider>().Raycast(head.Gaze, out hit, Mathf.Infinity);
 			
-			if ((isLookedAt && distance < 1)) {
+			if ((isLookedAt && distance < 2)) {
 				
-				GetComponent<Renderer> ().material.color = Color.yellow;
+				GetComponent<Renderer> ().material.color = Color.green;
 				interacting = true;
 				
 				if (Cardboard.SDK.CardboardTriggered) {
 					
 					Debug.Log ("Grabby grab!");
 					this.transform.parent = hand.transform; //Parent weapon to RightHand
-					this.transform.localPosition = new Vector3 (0, 0, 0); //Center Weapon
-					this.transform.localRotation = Quaternion.identity; //Reset roation
-					this.transform.localRotation = Quaternion.Euler (0, 0, -120); //Rotate
+					this.transform.localPosition = new Vector3 (0, 0, 0); //Center weapon
+					this.transform.localRotation = Quaternion.identity; //Reset rotation
+					this.transform.localRotation = Quaternion.Euler (0, 0, 0); //Rotate
+					this.transform.localScale += new Vector3(-0.5F, -0.5F, -0.5F);
 					Destroy(this.collider);
 					weaponWielded = true;
 					interacting = false;
@@ -45,7 +47,7 @@ public class WieldWeapon : Interactable {
 			}
 			if (!isLookedAt){
 				interacting = false;
-				GetComponent<Renderer> ().material.color = Color.red;
+				GetComponent<Renderer> ().material.color = Color.white;
 			}
 		}	
 	}
