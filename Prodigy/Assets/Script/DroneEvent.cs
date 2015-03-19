@@ -44,6 +44,7 @@ public class DroneEvent : MonoBehaviour {
 				decelerate = false;
 				droneRB.velocity= Vector3.zero;
 				Physics.IgnoreLayerCollision (9, 8,false);
+				SmokeFade.startFade();
 			}
 		}
 	}
