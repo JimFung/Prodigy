@@ -6,6 +6,7 @@ public class Door : MonoBehaviour {
 	private Animator animator;
 	private bool doorOpen;
 	private bool doorlock;
+	public GameObject enemyDronePrefab;
 
 	//boilerplate
 	void Start(){
@@ -20,6 +21,11 @@ public class Door : MonoBehaviour {
 			doorOpen = true;
 			DoorController("Open");
 			doorlock = false;
+
+			if(obj.gameObject.name == "Head")
+			{
+				randomDroneSpawn();
+			}
 		}
 	}
 
@@ -41,4 +47,13 @@ public class Door : MonoBehaviour {
 	private void DoorController(string state){
 		animator.SetTrigger(state);
 	}
+
+	void randomDroneSpawn(){
+		if (Random.value > .4) {
+			GameObject g = (GameObject)Instantiate(enemyDronePrefab,
+			                                       transform.position + new Vector3(5f,0.0f,0.0f),
+			                                       transform.parent.rotation);
+		}
+	}
+
 }

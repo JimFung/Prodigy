@@ -64,16 +64,17 @@ NavMeshSettings:
   m_ObjectHideFlags: 0
   m_BuildSettings:
     agentRadius: .5
-    agentHeight: 2
+    agentHeight: 1
     agentSlope: 45
-    agentClimb: .400000006
+    agentClimb: .100000001
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     accuratePlacement: 0
     minRegionArea: 2
-    widthInaccuracy: 16.666666
+    widthInaccuracy: 6
     heightInaccuracy: 10
-  m_NavMesh: {fileID: 0}
+    tileSizeHint: 0
+  m_NavMesh: {fileID: 19400000, guid: 9e77600761f4d1146b8d9501e27dedcc, type: 2}
 --- !u!1 &1970032
 GameObject:
   m_ObjectHideFlags: 0
@@ -7350,6 +7351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &172650347
 Animator:
   serializedVersion: 3
@@ -8153,6 +8155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &193310211
 Animator:
   serializedVersion: 3
@@ -9168,6 +9171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &221531651
 Animator:
   serializedVersion: 3
@@ -10222,6 +10226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &249293512
 Animator:
   serializedVersion: 3
@@ -11144,6 +11149,10 @@ Prefab:
       propertyPath: m_Name
       value: Door5
       objectReference: {fileID: 0}
+    - target: {fileID: 11466996, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
   m_RootGameObject: {fileID: 1962712032}
@@ -13777,6 +13786,10 @@ Prefab:
       propertyPath: m_Name
       value: Door4
       objectReference: {fileID: 0}
+    - target: {fileID: 11466996, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
   m_RootGameObject: {fileID: 859061204}
@@ -28488,6 +28501,10 @@ Prefab:
       propertyPath: m_Name
       value: vDoor3
       objectReference: {fileID: 0}
+    - target: {fileID: 11483486, guid: b3a3beca5fe7042a49a4569e02ca68e8, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3a3beca5fe7042a49a4569e02ca68e8, type: 2}
   m_RootGameObject: {fileID: 934259308}
@@ -29805,6 +29822,10 @@ Prefab:
       propertyPath: m_Name
       value: Door3
       objectReference: {fileID: 0}
+    - target: {fileID: 11466996, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
   m_RootGameObject: {fileID: 193310208}
@@ -31455,6 +31476,10 @@ Prefab:
       propertyPath: m_Name
       value: Door7
       objectReference: {fileID: 0}
+    - target: {fileID: 11466996, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
   m_RootGameObject: {fileID: 677986623}
@@ -31650,6 +31675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &677986626
 Animator:
   serializedVersion: 3
@@ -39350,6 +39376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &859061207
 Animator:
   serializedVersion: 3
@@ -40538,6 +40565,10 @@ Prefab:
       propertyPath: m_Name
       value: Door4
       objectReference: {fileID: 0}
+    - target: {fileID: 11466996, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
   m_RootGameObject: {fileID: 1096270101}
@@ -42578,6 +42609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &934259311
 Animator:
   serializedVersion: 3
@@ -44234,6 +44266,10 @@ Prefab:
       propertyPath: m_Name
       value: vDoor1
       objectReference: {fileID: 0}
+    - target: {fileID: 11483486, guid: b3a3beca5fe7042a49a4569e02ca68e8, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3a3beca5fe7042a49a4569e02ca68e8, type: 2}
   m_RootGameObject: {fileID: 221531648}
@@ -45798,6 +45834,10 @@ Prefab:
       propertyPath: m_Name
       value: Door2
       objectReference: {fileID: 0}
+    - target: {fileID: 11466996, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
   m_RootGameObject: {fileID: 2033542348}
@@ -48241,6 +48281,10 @@ Prefab:
       propertyPath: m_Name
       value: Door1
       objectReference: {fileID: 0}
+    - target: {fileID: 11466996, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
   m_RootGameObject: {fileID: 172650344}
@@ -48891,6 +48935,10 @@ Prefab:
       propertyPath: m_Name
       value: Door6
       objectReference: {fileID: 0}
+    - target: {fileID: 11466996, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
   m_RootGameObject: {fileID: 1339025113}
@@ -50289,6 +50337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &1096270104
 Animator:
   serializedVersion: 3
@@ -52139,7 +52188,7 @@ Transform:
   m_PrefabInternal: {fileID: 1563352410}
   m_GameObject: {fileID: 1144016665}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.67000008, y: 5, z: 14.8900003}
+  m_LocalPosition: {x: -1.49000001, y: 5, z: -3.49000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2041764500}
@@ -57343,6 +57392,10 @@ Prefab:
       propertyPath: m_Name
       value: vDoor4
       objectReference: {fileID: 0}
+    - target: {fileID: 11483486, guid: b3a3beca5fe7042a49a4569e02ca68e8, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3a3beca5fe7042a49a4569e02ca68e8, type: 2}
   m_RootGameObject: {fileID: 2047107981}
@@ -61364,6 +61417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &1339025116
 Animator:
   serializedVersion: 3
@@ -69268,6 +69322,10 @@ Prefab:
       propertyPath: m_Name
       value: vDoor2
       objectReference: {fileID: 0}
+    - target: {fileID: 11483486, guid: b3a3beca5fe7042a49a4569e02ca68e8, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3a3beca5fe7042a49a4569e02ca68e8, type: 2}
   m_RootGameObject: {fileID: 1614913881}
@@ -70405,7 +70463,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.67000008
+      value: -1.49000001
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
       propertyPath: m_LocalPosition.y
@@ -70413,7 +70471,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 14.8900003
+      value: -3.49000001
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
       propertyPath: m_LocalRotation.x
@@ -72649,6 +72707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &1614913884
 Animator:
   serializedVersion: 3
@@ -75035,6 +75094,10 @@ Prefab:
       propertyPath: m_Name
       value: Door5
       objectReference: {fileID: 0}
+    - target: {fileID: 11466996, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
   m_RootGameObject: {fileID: 2038423184}
@@ -76145,6 +76208,10 @@ Prefab:
       propertyPath: m_Name
       value: Door8
       objectReference: {fileID: 0}
+    - target: {fileID: 11466996, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
   m_RootGameObject: {fileID: 249293509}
@@ -87639,6 +87706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &1962712035
 Animator:
   serializedVersion: 3
@@ -88417,6 +88485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &1983982993
 Animator:
   serializedVersion: 3
@@ -88732,6 +88801,10 @@ Prefab:
       propertyPath: m_Name
       value: vDoor5
       objectReference: {fileID: 0}
+    - target: {fileID: 11483486, guid: b3a3beca5fe7042a49a4569e02ca68e8, type: 2}
+      propertyPath: enemyDronePrefab
+      value: 
+      objectReference: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3a3beca5fe7042a49a4569e02ca68e8, type: 2}
   m_RootGameObject: {fileID: 1983982990}
@@ -90122,6 +90195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &2033542351
 Animator:
   serializedVersion: 3
@@ -90341,6 +90415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &2038423187
 Animator:
   serializedVersion: 3
@@ -91118,6 +91193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDronePrefab: {fileID: 167210, guid: 8d909b4d312a43348bca5c1076eea881, type: 2}
 --- !u!95 &2047107984
 Animator:
   serializedVersion: 3
