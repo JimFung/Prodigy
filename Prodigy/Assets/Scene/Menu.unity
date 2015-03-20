@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greyBlue: {r: .200000003, g: .300000012, b: .400000006, a: .5}
+  lightBlue: {r: .100000001, g: .150000006, b: .200000003, a: .5}
 --- !u!65 &416325000
 BoxCollider:
   m_ObjectHideFlags: 0
