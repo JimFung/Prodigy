@@ -14,8 +14,6 @@ public class Keypad : MonoBehaviour{
 
 		player = GameObject.FindWithTag("MainCamera"); // Find the object tagged as MainCamera
 		head = Camera.main.GetComponent<StereoController>().Head;
-		keypadActive = true;
-
 	}
 
 	void Update(){
@@ -27,10 +25,6 @@ public class Keypad : MonoBehaviour{
 
 		RaycastHit hit;
 		bool isLookedAt = GetComponent<Collider>().Raycast(head.Gaze, out hit, Mathf.Infinity);
-
-		Debug.Log (keypadActive);
-		Debug.Log ("door:" + doorScript.isLocked ());
-		Debug.Log (isLookedAt);
 
 		if (isLookedAt && distance < 2) {
 			//player is in range to do something!
@@ -49,6 +43,10 @@ public class Keypad : MonoBehaviour{
 			} else{
 				//TODO: add check of usb key.
 				//pad = inactive; door = unlocked //completed state. 
+				if(!doorScript.isLocked()){
+					return;
+				}
+
 				//pad = inactive; door = locked
 				Debug.Log("Need to activate keypad!");
 				GetComponent<Renderer> ().material.color = Color.red;
