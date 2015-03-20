@@ -65,6 +65,7 @@
      <Compile Include="Assets\Script\DroneEventTrigger.cs" />
      <Compile Include="Assets\Script\FPSInputController.cs" />
      <Compile Include="Assets\Script\Interactable.cs" />
+     <Compile Include="Assets\Script\KeyCard.cs" />
      <Compile Include="Assets\Script\Keypad.cs" />
      <Compile Include="Assets\Script\QuitGame.cs" />
      <Compile Include="Assets\Script\Rocket.cs" />
