@@ -19,13 +19,12 @@ public class Keypad : MonoBehaviour{
 	void Update(){
 
 		doorScript = doorObj.GetComponent<DoorScript> ();
-		doorScript.isLocked ();
 
 		distance = Vector3.Distance (this.transform.position, player.transform.position);
 
 		RaycastHit hit;
 		bool isLookedAt = GetComponent<Collider>().Raycast(head.Gaze, out hit, Mathf.Infinity);
-
+		Debug.Log (keypadActive);
 		if (isLookedAt && distance < 2) {
 			//player is in range to do something!
 			if(keypadActive){
@@ -40,8 +39,7 @@ public class Keypad : MonoBehaviour{
 						doorScript.openDoors(GameObject.Find("Head").GetComponent<Collider>());
 					}
 				}
-			} else{
-				//TODO: add check of usb key.
+			} else {
 				//pad = inactive; door = unlocked //completed state. 
 				if(!doorScript.isLocked()){
 					return;
@@ -57,5 +55,9 @@ public class Keypad : MonoBehaviour{
 			Debug.Log("default");
 		}
 
+	}
+
+	public void gotKey(){
+		keypadActive = true;
 	}
 }
