@@ -70,9 +70,9 @@
      <Compile Include="Assets\Script\Shoot.cs" />
      <Compile Include="Assets\Script\SmokeFade.cs" />
      <Compile Include="Assets\Script\StartGame.cs" />
+     <Compile Include="Assets\Script\WeaponLight.cs" />
      <Compile Include="Assets\Script\WieldWeapon.cs" />
      <Compile Include="Assets\Script\light.cs" />
-     <Compile Include="Assets\WeaponLight.cs" />
      <None Include="Assets\Cardboard\Resources\SkyboxMesh.shader" />
      <None Include="Assets\StandardAssets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\StandardAssets\Skyboxes\_skybox info.txt" />
