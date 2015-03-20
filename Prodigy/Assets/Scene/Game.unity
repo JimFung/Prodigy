@@ -49680,7 +49680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f30beef1257431d45a2f3b0f7c5cfc2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2141602861}
+  player: {fileID: 0}
 --- !u!114 &1076377979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49692,7 +49692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a0568a84b0d4d74ea1da1fbc8df04b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rocketPrefab: {fileID: 119346, guid: 930240b371021a347aa767a59f6ba042, type: 2}
+  rocketPrefab: {fileID: 0}
 --- !u!64 &1076377980
 MeshCollider:
   m_ObjectHideFlags: 0
