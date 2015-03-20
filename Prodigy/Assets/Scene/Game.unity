@@ -7351,6 +7351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 1
+  normalDoor: 0
 --- !u!95 &172650347
 Animator:
   serializedVersion: 3
@@ -8155,6 +8156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 0
+  normalDoor: 0
 --- !u!95 &193310211
 Animator:
   serializedVersion: 3
@@ -9171,6 +9173,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11466996, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
       propertyPath: locked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11466996, guid: 9e375d7a72cd04092a14f3803b0c2247, type: 2}
+      propertyPath: paddedDoor
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9222,10 +9228,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  locked: 0
-  doorOpen: 0
-  doorlock: 0
 --- !u!95 &221531651
 Animator:
   serializedVersion: 3
@@ -10281,6 +10283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 0
+  normalDoor: 0
 --- !u!95 &249293512
 Animator:
   serializedVersion: 3
@@ -17753,7 +17756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorObj: {fileID: 1339025113}
-  keypadUnlocked: 1
+  keypadActive: 0
 --- !u!1 &424694676
 GameObject:
   m_ObjectHideFlags: 0
@@ -31728,6 +31731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 0
+  normalDoor: 0
 --- !u!95 &677986626
 Animator:
   serializedVersion: 3
@@ -39429,6 +39433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 0
+  normalDoor: 0
 --- !u!95 &859061207
 Animator:
   serializedVersion: 3
@@ -42657,10 +42662,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  locked: 0
-  doorOpen: 0
-  doorlock: 0
 --- !u!95 &934259311
 Animator:
   serializedVersion: 3
@@ -50333,6 +50334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 0
+  normalDoor: 0
 --- !u!95 &1096270104
 Animator:
   serializedVersion: 3
@@ -61408,7 +61410,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809c2a6a9efba4666995007cbf4c7c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locked: 1
+  locked: 0
+  normalDoor: 0
 --- !u!95 &1339025116
 Animator:
   serializedVersion: 3
@@ -72694,10 +72697,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  locked: 0
-  doorOpen: 0
-  doorlock: 0
 --- !u!95 &1614913884
 Animator:
   serializedVersion: 3
@@ -87689,6 +87688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 0
+  normalDoor: 0
 --- !u!95 &1962712035
 Animator:
   serializedVersion: 3
@@ -88467,10 +88467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  locked: 0
-  doorOpen: 0
-  doorlock: 0
 --- !u!95 &1983982993
 Animator:
   serializedVersion: 3
@@ -90177,6 +90173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 0
+  normalDoor: 0
 --- !u!95 &2033542351
 Animator:
   serializedVersion: 3
@@ -90397,6 +90394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 0
+  normalDoor: 0
 --- !u!95 &2038423187
 Animator:
   serializedVersion: 3
@@ -91174,10 +91172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3333c52147f27482e92559830b26e760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  locked: 0
-  doorOpen: 0
-  doorlock: 0
 --- !u!95 &2047107984
 Animator:
   serializedVersion: 3

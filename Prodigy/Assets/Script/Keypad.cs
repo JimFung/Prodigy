@@ -8,13 +8,13 @@ public class Keypad : MonoBehaviour{
 	public GameObject doorObj;
 	private DoorScript doorScript;
 	float distance = 10.0F;
-	public bool keypadUnlocked;
+	public bool keypadActive;
 
 	void Start(){
 
 		player = GameObject.FindWithTag("MainCamera"); // Find the object tagged as MainCamera
 		head = Camera.main.GetComponent<StereoController>().Head;
-		keypadUnlocked = true;
+		keypadActive = true;
 
 	}
 
@@ -28,27 +28,35 @@ public class Keypad : MonoBehaviour{
 		RaycastHit hit;
 		bool isLookedAt = GetComponent<Collider>().Raycast(head.Gaze, out hit, Mathf.Infinity);
 
-		Debug.Log (keypadUnlocked);
+		Debug.Log (keypadActive);
 		Debug.Log ("door:" + doorScript.isLocked ());
 		Debug.Log (isLookedAt);
 
-		if ((isLookedAt && distance < 2 && keypadUnlocked && doorScript.isLocked ())) {
-			
-			GetComponent<Renderer> ().material.color = Color.green;
-			
-			if (Cardboard.SDK.CardboardTriggered) {
-				doorScript.setLocked(true);
+		if (isLookedAt && distance < 2) {
+			//player is in range to do something!
+			if(keypadActive){
+				Debug.Log("keypad active");
+				//pad = active; door = unlocked //never happens.
+				//pad = active; door = locked
+				GetComponent<Renderer> ().material.color = Color.green;
+				if(doorScript.isLocked()){
+					if(Cardboard.SDK.CardboardTriggered){
+						Debug.Log("Unlocked the door");
+						doorScript.unlock();
+						doorScript.openDoors(GameObject.Find("Head").GetComponent<Collider>());
+					}
+				}
+			} else{
+				//TODO: add check of usb key.
+				//pad = inactive; door = unlocked //completed state. 
+				//pad = inactive; door = locked
+				Debug.Log("Need to activate keypad!");
+				GetComponent<Renderer> ().material.color = Color.red;
 			}
-		}
 
-		else if (keypadUnlocked == false){
-
-			GetComponent<Renderer> ().material.color = Color.red;
-
-		}
-
-		if (!isLookedAt || distance < 2 || !doorScript.isLocked()){
-			GetComponent<Renderer> ().material.color = Color.white;
+		} else {
+			GetComponent<Renderer> ().material.color = Color.white;	
+			Debug.Log("default");
 		}
 
 	}
