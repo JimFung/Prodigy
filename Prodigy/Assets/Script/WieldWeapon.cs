@@ -9,6 +9,7 @@ public class WieldWeapon : Interactable {
 	GameObject hand;
 	private float delay = 0.0f;
 	public static bool weaponWielded = false;
+	private static bool destroyLight;
 	
 	void Start(){
 		player = GameObject.FindWithTag("MainCamera"); // Find the object tagged as MainCamera
@@ -43,6 +44,7 @@ public class WieldWeapon : Interactable {
 					Destroy(this.collider);
 					weaponWielded = true;
 					interacting = false;
+					WeaponLight.destroyLight();
 				}
 			}
 			if (!isLookedAt){
