@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Door : MonoBehaviour {
+public class DoorScript : MonoBehaviour {
 
 	private Animator animator;
+	public bool locked;
 	private bool doorOpen;
 	private bool doorlock;
 
@@ -12,6 +13,8 @@ public class Door : MonoBehaviour {
 		doorOpen = false;
 		animator = GetComponent<Animator>();
 		doorlock = true;
+		locked = true;
+
 	}
 
 	//open door
@@ -33,12 +36,20 @@ public class Door : MonoBehaviour {
 			doorOpen = false;
 			doorlock = true;
 			DoorController ("Close");
-			
+
 		}
 	}
 
 	//Passes the state we want to the state diagram in the animator
 	private void DoorController(string state){
 		animator.SetTrigger(state);
+	}
+
+	public bool isLocked(){
+		return locked;
+	}
+
+	public void setLocked(bool lockState){
+		locked = lockState;
 	}
 }
