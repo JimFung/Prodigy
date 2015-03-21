@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class KeyCard : MonoBehaviour{
+public class KeyCard : Interactable {
 
 	private CardboardHead head;
 	private GameObject player;
@@ -24,13 +24,15 @@ public class KeyCard : MonoBehaviour{
 
 		if (isLookedAt && distance < 2) {
 			GetComponent<Renderer> ().material.color = Color.green;
-			
+			interacting = true;
+
 			if (Cardboard.SDK.CardboardTriggered) {
 				keypadScript.gotKey();
 				Destroy(gameObject);
 			}
 		} if (!isLookedAt){
 			GetComponent<Renderer> ().material.color = Color.white;
+			interacting = false;
 		}
 	}
 }

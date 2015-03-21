@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Keypad : MonoBehaviour{
+public class Keypad : Interactable {
 
 	private CardboardHead head;
 	private GameObject player;
@@ -28,31 +28,32 @@ public class Keypad : MonoBehaviour{
 		if (isLookedAt && distance < 2) {
 			//player is in range to do something!
 			if(keypadActive){
-				Debug.Log("keypad active");
 				//pad = active; door = unlocked //never happens.
 				//pad = active; door = locked
 				GetComponent<Renderer> ().material.color = Color.green;
+				interacting = true;
 				if(doorScript.isLocked()){
 					if(Cardboard.SDK.CardboardTriggered){
-						Debug.Log("Unlocked the door");
 						doorScript.unlock();
 						doorScript.openDoors(GameObject.Find("Head").GetComponent<Collider>());
+						keypadActive = false;
 					}
 				}
 			} else {
 				//pad = inactive; door = unlocked //completed state. 
 				if(!doorScript.isLocked()){
+					GetComponent<Renderer> ().material.color = Color.white;	
 					return;
 				}
 
 				//pad = inactive; door = locked
-				Debug.Log("Need to activate keypad!");
 				GetComponent<Renderer> ().material.color = Color.red;
+				interacting = true;
 			}
 
 		} else {
 			GetComponent<Renderer> ().material.color = Color.white;	
-			Debug.Log("default");
+			interacting = false;
 		}
 
 	}
