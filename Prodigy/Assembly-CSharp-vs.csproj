@@ -60,11 +60,13 @@
      <Compile Include="Assets\Cardboard\Scripts\StereoLensFlare.cs" />
      <Compile Include="Assets\Script\Autowalk.cs" />
      <Compile Include="Assets\Script\CharacterMotor.cs" />
-     <Compile Include="Assets\Script\Door.cs" />
+     <Compile Include="Assets\Script\DoorScript.cs" />
      <Compile Include="Assets\Script\DroneEvent.cs" />
      <Compile Include="Assets\Script\DroneEventTrigger.cs" />
      <Compile Include="Assets\Script\FPSInputController.cs" />
      <Compile Include="Assets\Script\Interactable.cs" />
+     <Compile Include="Assets\Script\KeyCard.cs" />
+     <Compile Include="Assets\Script\Keypad.cs" />
      <Compile Include="Assets\Script\QuitGame.cs" />
      <Compile Include="Assets\Script\Rocket.cs" />
      <Compile Include="Assets\Script\Shoot.cs" />
