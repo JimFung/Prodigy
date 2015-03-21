@@ -23,7 +23,11 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< HEAD
 																																																														GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																																																																			GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> 7b9f038ebd9ea4d9010d19fefa01db1e2e62a562
 =======
 																																																		GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> master
